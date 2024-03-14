@@ -5,6 +5,7 @@ import { IoIosCloseCircle } from "react-icons/io";
 import { PiDotsNineBold } from "react-icons/pi";
 import { IoClose } from "react-icons/io5";
 import { LuPhone } from "react-icons/lu";
+import {Link} from 'react-router-dom'
 
 const Navbar = () => {
   //  START NAVBAR
@@ -50,7 +51,7 @@ const Navbar = () => {
             <div className={active}>
                 <ul className='navlists flex'>
                     <li className='navItem'>
-                        <a href="#" className='navLink'>Home</a>
+                        <Link to='/' className='navLink'>Home</Link>
                     </li>
 
                     <li className='navItem'>
@@ -70,7 +71,7 @@ const Navbar = () => {
                     </li>
 
                     <li className='navItem'>
-                        <a href="#" className='navLink'>Contact</a>
+                        <Link to="/contact" className='navLink'>Contact</Link>
                     </li>
 
                     <button onClick={showform} className='user btn'>
@@ -160,6 +161,7 @@ const Navbar = () => {
           </nav>
         </div>
       {/* <!-- End Full Form Login --> */}
+           
     </section>
     
   )

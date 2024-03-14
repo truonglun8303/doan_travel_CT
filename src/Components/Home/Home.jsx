@@ -7,10 +7,11 @@ import { FaInstagram } from "react-icons/fa";
 import { FaTelegram } from "react-icons/fa";
 import { CiCircleList } from "react-icons/ci";
 import { TbApps } from "react-icons/tb";
-
 import Aos from 'aos';
 import 'aos/dist/aos.css'
 import video from '../../AssetDATRVEL/Video/video.mp4';
+import Main from '../Main/Main';
+import Footer from '../Footer/Footer';
 const Home = () => {
 useEffect(()=>{
   Aos.init({duration: 2000})
@@ -18,6 +19,7 @@ useEffect(()=>{
 
 
   return (
+    <div>
     <section className='home'>
       <div className='overlay'></div>
       <video src={video} muted autoPlay loop typeof='video/mp4'></video>
@@ -79,7 +81,13 @@ useEffect(()=>{
             </div>
         </div>
       </div>
+
     </section>
+    <Main/>
+    <Footer/>
+    </div>
+   
+    
   )
 }
 
