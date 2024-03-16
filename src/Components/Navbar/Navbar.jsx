@@ -42,10 +42,10 @@ const Navbar = () => {
         <header className='header flex'>
             <div className='logoDiv'>
                 <div className='logo flex'>
-                    {/* <h1><MdOutlineTravelExplore className="icon" /> Travel.</h1>
-                     */}
+
                     <h1>HinaTravel.</h1>
                     <h1>HinaTravel.</h1>
+               
                 </div>
             </div>
             <div className={active}>
@@ -55,11 +55,7 @@ const Navbar = () => {
                     </li>
 
                     <li className='navItem'>
-                        <a href="#" className='navLink'>Shop</a>
-                    </li>
-
-                    <li className='navItem'>
-                        <a href="#" className='navLink'>About</a>
+                        <Link to="/about" className='navLink'>About</Link>
                     </li>
 
                     <li className='navItem'>
@@ -67,7 +63,7 @@ const Navbar = () => {
                     </li>
 
                     <li className='navItem'>
-                        <a href="#" className='navLink'>News</a>
+                        <Link to="/news" className='navLink'>News</Link>
                     </li>
 
                     <li className='navItem'>

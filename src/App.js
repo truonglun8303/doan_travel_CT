@@ -4,9 +4,9 @@ import './App.css'
 
 import Navbar from './Components/Navbar/Navbar';
 import HomePage from './Components/Home/Home';
-import Main from './Components/Main/Main';
-import Footer from './Components/Footer/Footer';
+import NewsPage from './News/News';
 import ContactPage from './Components/Contact/contact'
+import AboutPage from './About/About';
 import { Router } from '@mui/icons-material';
 export const App = () => {
     return (
@@ -15,6 +15,8 @@ export const App = () => {
         <Routes>
             <Route path='/' element={<HomePage/>}></Route>
             <Route path='/contact' element={<ContactPage/>}></Route>
+            <Route path='/About' element={<AboutPage/>}></Route>
+            <Route path='/News' element={<NewsPage/>}></Route>
         </Routes>
         </>
     );

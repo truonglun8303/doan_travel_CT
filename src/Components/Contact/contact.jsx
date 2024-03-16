@@ -23,7 +23,7 @@ const contact = () => {
       <div className="row gy-3 gy-md-4 gy-lg-0 align-items-xl-center">
         <div className="col-10 col-lg-6">
           <img
-           
+            id='img_card'
             className="img-fluid rounded"
             loading="lazy"
             src={img11}

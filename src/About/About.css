@@ -1,0 +1,9 @@
+.img-fluid{
+    height: 300px!important;
+}
+#container_card{
+    padding-bottom: 200px;
+}
+.container h2{
+    margin-bottom: 0 !important;
+}

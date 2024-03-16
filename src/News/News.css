@@ -1,0 +1,7 @@
+#news_card{
+    padding-top: 150px;
+     margin: 0px 10px 0 10px;
+    img{
+        border-radius: 10px;
+    }
+}
