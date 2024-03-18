@@ -43,7 +43,7 @@ const Data = [
     description:'ABCABCABCABC'
   },
   {
-    id:2,
+    id:4,
     imgSrc: img4,
     destTitle:'HAHA HAHA',
     location: 'New Zealand',
@@ -52,7 +52,7 @@ const Data = [
     description:'ABCABCABCABC'
   },
   {
-    id:2,
+    id:5,
     imgSrc: img5,
     destTitle:'HAHA HAHA',
     location: 'New Zealand',
@@ -61,7 +61,7 @@ const Data = [
     description:'ABCABCABCABC'
   },
   {
-    id:2,
+    id:6,
     imgSrc: img6,
     destTitle:'HAHA HAHA',
     location: 'New Zealand',
@@ -70,7 +70,7 @@ const Data = [
     description:'ABCABCABCABC'
   },
   {
-    id:2,
+    id:7,
     imgSrc: img7,
     destTitle:'HAHA HAHA',
     location: 'New Zealand',
@@ -79,7 +79,7 @@ const Data = [
     description:'ABCABCABCABC'
   },
   {
-    id:2,
+    id:8,
     imgSrc: img8,
     destTitle:'HAHA HAHA',
     location: 'New Zealand',
@@ -88,7 +88,7 @@ const Data = [
     description:'ABCABCABCABC'
   },
   {
-    id:2,
+    id:9,
     imgSrc: img9,
     destTitle:'HAHA HAHA',
     location: 'New Zealand',

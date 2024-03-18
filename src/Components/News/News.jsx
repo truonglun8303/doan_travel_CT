@@ -1,6 +1,6 @@
 import React from 'react'
-import './News.css'
-import img1 from '../AssetDATRVEL/Image/img(1).jpg'
+import './news.css';
+import img1 from '../../AssetDATRVEL/Image/img(1).jpg'
 const Data = [
     {
     id: 1,

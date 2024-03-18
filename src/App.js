@@ -3,7 +3,7 @@ import {Routes,Route} from 'react-router-dom'
 import './App.css'
 import Navbar from './Components/Navbar/Navbar';
 import HomePage from './Components/Home/Home';
-import NewsPage from './News/News';
+import NewsPage from './Components/News/News';
 import ContactPage from './Components/Contact/contact'
 import AboutPage from './About/About';
 import { Router } from '@mui/icons-material';

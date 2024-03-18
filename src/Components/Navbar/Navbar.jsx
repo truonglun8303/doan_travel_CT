@@ -113,37 +113,37 @@ const Navbar = () => {
               <form className="input-info" action="">
                 <ul className="name">
                   <li className="form-filed">
-                    <input class="form-input" type="text" placeholder=" "/>
-                    <label for="name" class="form-label">First name (required)</label>
+                    <input className="form-input" type="text" placeholder=" "/>
+                    <label htmlFor="name" className="form-label">First name (required)</label>
                   </li>
                   <li className="form-filed">
-                    <input class="form-input" type="text" placeholder=" "/>
-                    <label for="name" class="form-label">Last name (required)</label>
+                    <input className="form-input" type="text" placeholder=" "/>
+                    <label htmlFor="name" className="form-label">Last name (required)</label>
                   </li>
                 </ul>
                 <ul className="email-phone">
                   <li className="form-filed">
-                    <input class="form-input" type="text" placeholder=" "/>
-                    <label for="name" class="form-label">E-mail (required)</label>
+                    <input className="form-input" type="text" placeholder=" "/>
+                    <label htmlFor="name" className="form-label">E-mail (required)</label>
                   </li>
 
                   <li className="form-filed">
                     <input className="form-input" type="text" placeholder=" "/>
-                    <label for="name" class="form-label">Telephone (required)</label>
+                    <label htmlFor="name" className="form-label">Telephone (required)</label>
                   </li>
                 </ul>
                 
                 <div className="number-of-traveller">
                     <div className="form-filed">
-                        <input class="form-input" type="text" placeholder=" "/>
-                        <label for="name" class="form-label">Number of travellers (required)</label>
+                        <input className="form-input" type="text" placeholder=" "/>
+                        <label htmlFor="name" className="form-label">Number of travellers (required)</label>
                     </div>
                 </div>
 
                 <div className="Destination">
                     <div className="form-filed">
-                        <input class="form-input" type="text" placeholder=" "/>
-                        <label for="name" class="form-label">Destination</label>
+                        <input className="form-input" type="text" placeholder=" "/>
+                        <label htmlFor="name" className="form-label">Destination</label>
                     </div>
                 </div>
                 <div className="Interests">

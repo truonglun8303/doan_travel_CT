@@ -6,7 +6,6 @@ const instance = axios.create(
         timeout: 300000
     }
 );
-
 instance.interceptors.response.use(
     (response) =>{
         return response.data
