@@ -20,7 +20,9 @@
     align-items: center;
     justify-content: center;
     margin: auto;
-
+    input{
+        font-size: 100%;
+    }
     .videoDiv{
         position: absolute;
         height: 100%;

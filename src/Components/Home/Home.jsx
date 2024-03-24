@@ -1,5 +1,6 @@
 import React,{useEffect} from 'react';
 import './home.css';
+
 import {GrLocation} from 'react-icons/gr';
 import {HiFilter} from 'react-icons/hi'
 import { FiFacebook } from "react-icons/fi";
@@ -12,6 +13,7 @@ import 'aos/dist/aos.css'
 import video from '../../AssetDATRVEL/Video/video.mp4';
 import Main from '../Main/Main';
 import Footer from '../Footer/Footer';
+import Navbar from '../Navbar/Navbar';
 const Home = () => {
 useEffect(()=>{
   Aos.init({duration: 2000})
@@ -20,6 +22,7 @@ useEffect(()=>{
 
   return (
     <div>
+      <Navbar/>
     <section className='home'>
       <div className='overlay'></div>
       <video src={video} muted autoPlay loop typeof='video/mp4'></video>

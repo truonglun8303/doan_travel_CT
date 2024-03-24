@@ -1,9 +1,11 @@
 import React from 'react'
 import img11 from '../../AssetDATRVEL/Image/img(11).jpg'
 import './contact.css'
+import Navbar from '../Navbar/Navbar'
 const contact = () => {
   return (
     <>
+    <Navbar/>
   {/* Contact 4 - Bootstrap Brain Component */}
    <section className="bg-light py-3 py-md-5">
     <div className="container">

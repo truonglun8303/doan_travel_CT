@@ -14,8 +14,11 @@
 }
 
 .main{
-    width:100%;
 
+    width:100%;
+input{
+    font-size: 100%;
+}
     .secTitle{
         .title{
             position: relative;

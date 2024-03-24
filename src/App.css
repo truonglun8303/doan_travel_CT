@@ -1,3 +1,4 @@
+/* APP CSS */
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
 
 *{
@@ -67,9 +68,9 @@ img, video{
     width: 100%;
     height: auto;
 }
-input{
+/* input{
     font-size: 100%;
-}
+} */
 body{
     background: var(--bodyColor);
 }

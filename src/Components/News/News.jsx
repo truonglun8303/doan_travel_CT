@@ -1,6 +1,7 @@
 import React from 'react'
 import './news.css';
 import img1 from '../../AssetDATRVEL/Image/img(1).jpg'
+import Navbar from '../Navbar/Navbar';
 const Data = [
     {
     id: 1,
@@ -16,6 +17,8 @@ const News = () => {
         
         Data.map(({id,imgSrc,description,destTitle}) =>{
             return(
+<div>
+  <Navbar/>
   <section  id='news_card' className="row gx-5">
    
             <div key={id} className="col-md-6 mb-4">
@@ -51,6 +54,7 @@ const News = () => {
             </div>
      
   </section>
+</div>
   )
 })
 }
