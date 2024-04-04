@@ -25,7 +25,7 @@ html{
     scroll-behavior: smooth;
 }
 a{
-    text-decoration: none;
+    text-decoration: none !important;
 }
 li{
     list-style: none;
@@ -52,7 +52,7 @@ li{
 .btn{
     padding: .6rem 1.5rem;
     background: var(--gradientColor);
-    border-radius: 3rem;
+    border-radius: 13rem !important;   
     border: none;
     outline: none;
     cursor: pointer;

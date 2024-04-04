@@ -1,6 +1,5 @@
 import React,{useEffect} from 'react';
 import './home.css';
-
 import {GrLocation} from 'react-icons/gr';
 import {HiFilter} from 'react-icons/hi'
 import { FiFacebook } from "react-icons/fi";
