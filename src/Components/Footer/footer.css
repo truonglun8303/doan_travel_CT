@@ -91,7 +91,7 @@
                         opacity: .5;
                     }
                 }
-                .btn{
+                .btn_home{
                     width: 100%;
                     justify-content: center;
                     color: var(--whiteColor);
@@ -240,7 +240,7 @@
                     input{
                         width: 60%;
                     }
-                    .btn{
+                    .btn_home{
                         width: max-content;
                     }
                 }

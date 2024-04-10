@@ -133,7 +133,7 @@ const contact = () => {
                     <div className="col-12">
                       <div className="d-grid">
                         <button
-                          className="btn btn-primary btn-lg"
+                          className="btn_home btn-primary btn-lg"
                           type="submit"
                         >
                           Send Message

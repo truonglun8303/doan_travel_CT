@@ -21,23 +21,23 @@ const Footer = () => {
         <video src={video2} loop autoPlay muted typeof='video/mp4'></video>
       </div>
       <div className='secContent container'>
-        <div className='contactDiv flex'>
+        <div className='contactDiv flex_home'>
           <div data-aos='fade-up' className='text'>
             <small>KEEP IN TOUCH</small>
             <h2>Travel with us</h2>
           </div>
           <div className='inputDiv flex'>
             <input data-aos='fade-up' type='text' placeholder='Enter Email Address'/>
-            <button data-aos='fade-up' className='btn flex' type='submit'>
+            <button data-aos='fade-up' className='btn_home flex_home' type='submit'>
               SEND <FiSend className='icon'/>
             </button>
           </div>
         </div>
 
-        <div className='footerCard flex'>
-            <div className='footerIntro flex'>
+        <div className='footerCard flex_home'>
+            <div className='footerIntro flex_home'>
               <div className='logoDiv'>
-                <a href='#' className='logo flex'>
+                <a href='#' className='logo flex_home'>
                   <MdTravelExplore className='icon' /> Travel.
                 </a>
               </div>
@@ -45,7 +45,7 @@ const Footer = () => {
               <div data-aos='fade-up' className='footerParagraph'>
                 ABC
               </div>
-              <div data-aos='fade-up' className='footerSocials flex'>
+              <div data-aos='fade-up' className='footerSocials flex_home'>
               <FaTwitter className='icon' />
               <FaYoutube className='icon' />
               <FaInstagram  className='icon' />
@@ -58,27 +58,27 @@ const Footer = () => {
                   <span className='groupTitle'>
                     OUR AGENCY
                   </span>
-                  <li className='footerList flex'>
+                  <li className='footerList flex_home'>
                     <FiChevronRight className='icon' />
                     Services
                   </li>
 
-                  <li className='footerList flex'>
+                  <li className='footerList flex_home'>
                     <FiChevronRight className='icon' />
                     Insurance
                   </li>
 
-                  <li className='footerList flex'>
+                  <li className='footerList flex_home'>
                     <FiChevronRight className='icon' />
                     Agency
                   </li>
 
-                  <li className='footerList flex'>
+                  <li className='footerList flex_home'>
                     <FiChevronRight className='icon' />
                     Tourism
                   </li>
 
-                  <li className='footerList flex'>
+                  <li className='footerList flex_home'>
                     <FiChevronRight className='icon' />
                     Payment
                   </li>
@@ -88,27 +88,27 @@ const Footer = () => {
                   <span className='groupTitle'>
                     PARTNERS
                   </span>
-                  <li className='footerList flex'>
+                  <li className='footerList flex_home'>
                     <FiChevronRight className='icon' />
                     Bookings
                   </li>
 
-                  <li className='footerList flex'>
+                  <li className='footerList flex_home'>
                     <FiChevronRight className='icon' />
                     Rentcars
                   </li>
 
-                  <li className='footerList flex'>
+                  <li className='footerList flex_home'>
                     <FiChevronRight className='icon' />
                     HostelWorld
                   </li>
 
-                  <li className='footerList flex'>
+                  <li className='footerList flex_home'>
                     <FiChevronRight className='icon' />
                     Trivago
                   </li>
 
-                  <li className='footerList flex'>
+                  <li className='footerList flex_home'>
                     <FiChevronRight className='icon' />
                     TripAdvisor
                   </li>
@@ -123,28 +123,28 @@ const Footer = () => {
                     London
                   </li>
 
-                  <li className='footerList flex'>
+                  <li className='footerList flex_home'>
                     <FiChevronRight className='icon' />
                     California
                   </li>
 
-                  <li className='footerList flex'>
+                  <li className='footerList flex_home'>
                     <FiChevronRight className='icon' />
                     Indonesia
                   </li>
 
-                  <li className='footerList flex'>
+                  <li className='footerList flex_home'>
                     <FiChevronRight className='icon' />
                     Europe
                   </li>
 
-                  <li className='footerList flex'>
+                  <li className='footerList flex_home'>
                     <FiChevronRight className='icon' />
                     Oceania
                   </li>
                 </div>
             </div>
-            <div className='footerDiv flex'>
+            <div className='footerDiv flex_home'>
               <small>BEST TRAVEL WEBSITE @2024</small>
               <small>FullStack: PHAM QUANG TRUONG </small>
             </div>

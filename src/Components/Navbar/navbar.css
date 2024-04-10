@@ -311,6 +311,14 @@
     color: #000;
 }
   @media screen and (max-width:768px) {
+    
+ .header{
+    .logo{
+        h1{
+            font-size: 50px;
+        }
+    }
+ }
       .navBar{
           position: absolute;
           background: var(--whiteColorDeam);
@@ -343,7 +351,7 @@
                           }
                       }
               }
-              .btn{
+              .btn_home{
                   margin-top: 1rem;
                   a{
                       font-weight: 600;
@@ -368,7 +376,7 @@
       }
       .logo{
         margin-left: 30%;
-      }
+      }   
   }
   .toggleNavbar{
       .icon{

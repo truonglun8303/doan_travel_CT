@@ -41,7 +41,7 @@ li{
     font-size: 2rem;
     cursor: pointer;
 }
-.flex{
+.flex_home{
     display: flex;
     align-items: center;
 }
@@ -49,7 +49,7 @@ li{
     display: grid;
     align-items: center;
 }
-.btn{
+.btn_home{
     padding: .6rem 1.5rem;
     background: var(--gradientColor);
     border-radius: 13rem !important;   
@@ -57,11 +57,11 @@ li{
     outline: none;
     cursor: pointer;
 }
-.btn a{
+.btn_home a{
     color: var(--whiteColor);
     font-weight: 500;
 }
-.btn:hover{
+.btn_home:hover{
     background: var(--SecondaryColor);
 }
 img, video{

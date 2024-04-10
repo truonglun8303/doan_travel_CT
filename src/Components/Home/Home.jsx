@@ -42,7 +42,7 @@ useEffect(()=>{
               <label htmlFor='city'>
                 Search your destination: 
               </label>
-              <div className='input flex'>
+              <div className='input flex_home'>
                 <input type='text' placeholder='Enter name here....'/>
                 <GrLocation className='icon'/>
               </div>
@@ -52,26 +52,26 @@ useEffect(()=>{
               <label htmlFor='date'>
                 Select your date:
               </label>
-              <div className='input flex'>
+              <div className='input flex_home'>
                 <input type='date' placeholder='Enter name here....'/>
               </div>
             </div>
 
             <div className='priceInput'>
-              <div className='label_total flex'>
+              <div className='label_total flex_home'>
                 <label htmlFor='price'>Max price: </label>
                 <h3 className='total'>5000$</h3>
               </div>
-              <div className='input flex'>
+              <div className='input flex_home'>
                 <input type='range' max={5000} min={1000}></input>
               </div>
             </div>
-            <div className='searchOptions flex'>
+            <div className='searchOptions flex_home'>
               <HiFilter className='icon'/>
               <span>MORE FILTERS</span>
             </div>
         </div>
-        <div data-aos='fade-up' className='homeFooterIcons flex'>
+        <div data-aos='fade-up' className='homeFooterIcons flex_home'>
             <div className='rightIcons'>
                 <FiFacebook className='icon'/>
                 <FaInstagram  className='icon'/>

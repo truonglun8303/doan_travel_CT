@@ -130,7 +130,7 @@ input{
                     color: var(--textColor);
                     font-weight: 500;
                 }
-                .btn{
+                .btn_home{
                     margin-top: 1rem;
                     color: var(--whiteColor);
                     font-weight: 600;

@@ -48,7 +48,7 @@ const News = () => {
             <p className="text-muted">
             {description}
             </p>
-            <button type="button" className="btn btn-primary">
+            <button type="button" className="btn_home btn-primary">
                 Read more
             </button>
             </div>

@@ -1,23 +1,43 @@
 import React from 'react'
+import '../../AssetDATRVEL/clients/plugins/fontawesome-free/css/all.min.css'
+import '../../AssetDATRVEL/clients/plugins/daterangepicker/daterangepicker.css';
+    
+import '../../AssetDATRVEL/clients/plugins/icheck-bootstrap/icheck-bootstrap.min.css';
+
+import '../../AssetDATRVEL/clients/plugins/bootstrap-colorpicker/css/bootstrap-colorpicker.min.css';
+
+import '../../AssetDATRVEL/clients/plugins/tempusdominus-bootstrap-4/css/tempusdominus-bootstrap-4.min.css';
+
+import '../../AssetDATRVEL/clients/plugins/select2/css/select2.min.css';
+import'../../AssetDATRVEL/clients/plugins/select2-bootstrap4-theme/select2-bootstrap4.min.css';
+import '../../AssetDATRVEL/clients/plugins/bootstrap4-duallistbox/bootstrap-duallistbox.min.css';
+
+import '../../AssetDATRVEL/clients/plugins/bs-stepper/css/bs-stepper.min.css';
+
+import '../../AssetDATRVEL/clients/plugins/dropzone/min/dropzone.min.css';
+
+import '../../AssetDATRVEL/clients/dist/css/adminlte.min.css';
+
+import useScript from '../../Javascript/Admin';
+import {Link} from 'react-router-dom'
 
 const Navbar = () => {
+  useScript('');
   return (
     <div>
       <>
+<aside class="main-sidebar sidebar-dark-primary elevation-4">
+
   {/* Sidebar */}
   <div className="sidebar">
     {/* Sidebar user (optional) */}
     <div className="user-panel mt-3 pb-3 mb-3 d-flex">
       <div className="image">
-        {/* <img
-          src="#"
-          className="img-circle elevation-2"
-          alt="User Image"
-        /> */}
+      
       </div>
       <div className="info">
         <a href="~/Views/Home/Index.cshtml" className="d-block">
-          Alexander Pierce
+          Pham Quang Truong
         </a>
       </div>
     </div>
@@ -32,29 +52,19 @@ const Navbar = () => {
       >
         {/* Add icons to the links using the .nav-icon class
       with font-awesome or any other icon font library */}
+      
         <li className="nav-item">
-          <a href="/admin/Category" className="nav-link">
-            <i className="nav-icon fas fa-tachometer-alt" />
-            <p>
-              Danh mục @*
-              <i className="right fas fa-angle-left" />
-              *@
-            </p>
-          </a>
-        </li>
-        <li className="nav-item">
-          <a href="/admin/news" className="nav-link">
-            <i className="nav-icon fas fa-th" />
-            <p>
-              Tin tức @*<span className="right badge badge-danger">New</span>*@
-            </p>
-          </a>
+        <Link to='/admin/Tour' className="nav-link">
+          <i className="nav-icon fas fa-th" />
+          Tour
+        </Link>
+          
         </li>
         <li className="nav-item">
           <a href="/admin/posts" className="nav-link">
             <i className="nav-icon fas fa-th" />
             <p>
-              Bài viết @*<span className="right badge badge-danger">New</span>*@
+              Bài viết 
             </p>
           </a>
         </li>
@@ -62,7 +72,7 @@ const Navbar = () => {
           <a href="/admin/Order" className="nav-link">
             <i className="nav-icon fas fa-th" />
             <p>
-              Đơn hàng @*<span className="right badge badge-danger">New</span>*@
+              Đơn hàng 
             </p>
           </a>
         </li>
@@ -70,8 +80,7 @@ const Navbar = () => {
           <a href="/admin/posts" className="nav-link">
             <i className="nav-icon fas fa-th" />
             <p>
-              Quảng cáo @*<span className="right badge badge-danger">New</span>
-              *@
+              Quảng cáo
             </p>
           </a>
         </li>
@@ -80,41 +89,27 @@ const Navbar = () => {
             <i className="nav-icon fas fa-tachometer-alt" />
             <p>
               Quản lý sản phẩm
-              <i className="right fas fa-angle-left" />
             </p>
           </a>
-          <ul className="nav nav-treeview">
-            <li className="nav-item">
-              <a href="/admin/productcategory" className="nav-link">
-                <i className="far fa-circle nav-icon" />
-                <p>Danh mục sẳn phẩm</p>
-              </a>
-            </li>
-            <li className="nav-item">
-              <a href="/admin/Product" className="nav-link">
-                <i className="far fa-circle nav-icon" />
-                <p>Sản phẩm</p>
-              </a>
-            </li>
-          </ul>
+         
         </li>
-        <li className="nav-item">
+        {/* <li className="nav-item">
           <a
-            href="javascript:document.getElementById('logOffForm').submit()"
+          'javascript:document.getElementById('logOffForm').submit()"
             className="nav-link"
           >
             <i className="nav-icon fas fa-th" />
             <p>
-              Đăng xuất @*<span className="right badge badge-danger">New</span>
-              *@
+              Đăng xuất 
             </p>
           </a>
-        </li>
+        </li> */}
       </ul>
     </nav>
     {/* /.sidebar-menu */}
   </div>
   {/* /.sidebar */}
+</aside>
 </>
 
     </div>

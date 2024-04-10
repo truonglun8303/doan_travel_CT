@@ -129,12 +129,12 @@ const Main = () => {
                     </div>
                     <div className='cardInfo'>
                       <h4 className='destTitle'>{destTitle}</h4>
-                      <span className='continent flex'>
+                      <span className='continent flex_home'>
                         <HiOutlineLocationMarker className='icon' />
                         <span className='name'>{location}</span>
                       </span>
 
-                      <div className='fees flex'>
+                      <div className='fees flex_home'>
                         <div className='grade'>
                           <span>{grade}<small>+1</small></span>
                         </div>
@@ -145,7 +145,7 @@ const Main = () => {
                       <div className='desc'>
                         <p>{description}</p>
                       </div>
-                      <button className='btn flex'>
+                      <button className='btn_home flex_home'>
                         DETAILS <LuClipboardCheck className='icon' />
                       </button>
                     </div>

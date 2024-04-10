@@ -40,9 +40,9 @@ const Navbar = () => {
       {/* <div class="cursor">
         <div class="cursor-1"></div>
       </div> */}
-        <header className='header flex'>
+        <header className='header flex_home'>
             <div className='logoDiv'>
-                <div className='logo flex'>
+                <div className='logo flex_home'>
 
                     <h1>HinaTravel.</h1>
                     <h1>HinaTravel.</h1>
@@ -50,7 +50,7 @@ const Navbar = () => {
                 </div>
             </div>
             <div className={active}>
-                <ul className='navlists flex'>
+                <ul className='navlists flex_home'>
                     <li className='navItem'>
                         <Link to='/' className='navLink'>Home</Link>
                     </li>
@@ -71,7 +71,7 @@ const Navbar = () => {
                         <Link to="/contact" className='navLink'>Contact</Link>
                     </li>
 
-                    <button onClick={showform} className='user btn'>
+                    <button onClick={showform} className='user btn_home'>
                         <a href='#'>BOOK NOW</a>
                     </button>
                 </ul>
