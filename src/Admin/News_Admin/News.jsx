@@ -1,18 +1,6 @@
-import React, { useEffect, useState } from "react";
-import Navbar from "../Navbar_Admin/Navbar";
-import { Link } from "react-router-dom";
-import {getTourAPI} from '../../API/Travel';
-import { Key } from "@mui/icons-material";
+import React from 'react'
 
-const Tour = () => {
-  const [tour, settour] = useState([]);
-  useEffect(()=>{
-    fetchData();
-  },[]);
-   
-  const fetchData = async () =>{
-    settour(await getTourAPI());
-  } 
+const News = () => {
   return (
     <>
       <Navbar />
@@ -37,7 +25,7 @@ const Tour = () => {
                     </span>
                   </div>
                   <div className="card-tools">
-                    <Link to="/admin/AddTour" className="btn btn-primary">
+                    <Link to="/admin/AddNews" className="btn btn-primary">
                       Add
                     </Link>
                     {/* <a href="#" className="btn btn-danger" id="BtnDeleteAll">
@@ -80,11 +68,7 @@ const Tour = () => {
                     <td className="text-center"></td>
                     <td className="text-center"></td>
                     <td className="text-center"></td>
-                      {
-                        tour?.map((item,Key)=>(
-                          <td className="text-center">{item.name}</td>
-                        ))
-                      }
+
                     {/* <td className="text-center">
                       <a href="" className="btn btn-sm btn-primary">
                         correct
@@ -104,7 +88,7 @@ const Tour = () => {
         </section>
       </div>
     </>
-  );
-};
+  )
+}
 
-export default Tour;
+export default News

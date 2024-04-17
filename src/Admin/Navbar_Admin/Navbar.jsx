@@ -64,7 +64,7 @@ const Navbar = () => {
           <a href="/admin/posts" className="nav-link">
             <i className="nav-icon fas fa-th" />
             <p>
-              Bài viết 
+              News
             </p>
           </a>
         </li>
@@ -84,7 +84,7 @@ const Navbar = () => {
             </p>
           </a>
         </li>
-        <li className="nav-item">
+        {/* <li className="nav-item">
           <a href="#" className="nav-link">
             <i className="nav-icon fas fa-tachometer-alt" />
             <p>
@@ -92,17 +92,6 @@ const Navbar = () => {
             </p>
           </a>
          
-        </li>
-        {/* <li className="nav-item">
-          <a
-          'javascript:document.getElementById('logOffForm').submit()"
-            className="nav-link"
-          >
-            <i className="nav-icon fas fa-th" />
-            <p>
-              Đăng xuất 
-            </p>
-          </a>
         </li> */}
       </ul>
     </nav>
