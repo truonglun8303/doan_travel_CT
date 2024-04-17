@@ -22,7 +22,7 @@ export const AddTour = () => {
         Description: DescriptionTour,
         Price: PriceTour,
         StartDate: StartDateTour,
-        EndDate: EndDateTourxczxczxczxcz
+        EndDate: EndDateTour
       });   
     }
   };
