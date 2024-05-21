@@ -1,18 +1,31 @@
 import React, { useEffect, useState } from "react";
 import Navbar from "../Navbar_Admin/Navbar";
 import { Link } from "react-router-dom";
-import {getTourAPI} from '../../API/Travel';
-import { Key } from "@mui/icons-material";
+import './Tour.css';
+import axios from 'axios'
+// import { getTourAPI } from "../../API/Travel";
+
 
 const Tour = () => {
-  const [tour, settour] = useState([]);
-  useEffect(()=>{
-    fetchData();
-  },[]);
-   
-  const fetchData = async () =>{
-    settour(await getTourAPI());
-  } 
+
+  const [data, setData] = useState([]);
+  useEffect(() => {
+    axios.get('http://localhost:8081/Tours')
+    .then(res => setData(res.data)
+    )
+    .catch(err => console.log(err))
+  })
+
+  const handleDelete = async (id) =>{
+    try{
+      await axios.delete('http://localhost:8081/delTours/' + id)
+      window.location.reload()
+    }
+    catch(err){
+        console.log(err);
+    }
+  }
+
   return (
     <>
       <Navbar />
@@ -23,7 +36,7 @@ const Tour = () => {
             <div className="card-header">
               <h3 className="card-title">Tour List</h3>
             </div>
-            <div className="card-body">
+            <div className="card-body-search" >
               <div className="row">
                 <div className="col-6">
                   <div className="form-group d-flex">
@@ -50,53 +63,49 @@ const Tour = () => {
             <div className="card-body">
               <table className="table table-hover">
                 <thead>
-                  <tr>
-                    <th>
+                  <tr >
+                    {/* <th>
                       <input type="checkbox" id="SelectAll" />
-                    </th>
-                    <th className="text-center">STT</th>
-                    <th className="text-center">Id Tour</th>
-                    <th className="text-center">Image Tour</th>
-                    <th className="text-center">Name Tour</th>
-                    <th className="text-center">Price</th>
-                    <th className="text-center">StartDate</th>
-                    <th className="text-center">EndDate</th>
+                    </th> */}
+                    {/* <th className="text-center">STT</th> */}
+                    <th className="text-center flex-grow-1 ms-3">Name Tour</th>
+                    <th className="text-center flex-grow-1 ms-3">Image Tour</th>
+                    <th className="text-center flex-grow-1 ms-3">Description Tour</th>
+                    <th className="text-center flex-grow-1 ms-3">Price</th>
+                    <th className="text-center flex-grow-1 ms-3">StartDate</th>
+                    <th className="text-center flex-grow-1 ms-3">EndDate</th>
                   </tr>
                 </thead>
                 <tbody>
-                  <tr id="">
-                    <td>
-                      {/* <input
-                        type="checkbox"
-                        className="cbkItem"
-                        defaultValue="@item.Id"
-                      /> */}
-                    </td>
-                    <td className="text-center"></td>
-                    <td>
-                      <img src="" width="80px" />
-                    </td>
-                    <td className="text-center"></td>
-                    <td className="text-center"></td>
-                    <td className="text-center"></td>
-                    <td className="text-center"></td>
-                      {
-                        tour?.map((item,Key)=>(
-                          <td className="text-center">{item.name}</td>
+                  
+                    {data?( 
+                    
+                        data.map((item,key) => (
+                          <tr  key={key}>
+                            <td className="text-center flex-grow-1 ms-3">{item.title}</td>
+                            <td className="text-center flex-shrink-0 "><img className="images_admin" src={`http://localhost:8081/images/` + item.image} alt="" /></td>
+                            <td className="text-center flex-grow-1 ms-3">{item.description}</td>
+                            <td className="text-center flex-grow-1 ms-3">{item.price}$</td>
+                            <td className="text-center flex-grow-1 ms-3">{item.startdate}</td>
+                            <td className="text-center flex-grow-1 ms-3">{item.enddate}</td>
+                            <td className="text-center">
+                            <Link to={`update/${item.ID}`} className="btn btn-sm btn-primary">
+                              correct
+                            </Link>
+                            <button className="btn btn-sm btn-danger btnDelete" onClick={ e => handleDelete(item.ID)}>
+                              Delete
+                            </button>
+                    </td> 
+                          </tr>
+
                         ))
-                      }
-                    {/* <td className="text-center">
-                      <a href="" className="btn btn-sm btn-primary">
-                        correct
-                      </a>
-                      <a href="#" className="btn btn-sm btn-danger btnDelete">
-                        Delete
-                      </a>
-                    </td> */}
-                  </tr>
-                  <tr>
-                    <td colSpan={4}>No Content !!!</td>
-                  </tr>
+                    
+                     
+                     ) : (
+                      <tr>
+                        <td colSpan={4}>No Content !!!</td>
+                      </tr>
+                    )}   
                 </tbody>
               </table>
             </div>

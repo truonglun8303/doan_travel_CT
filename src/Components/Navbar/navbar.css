@@ -293,7 +293,7 @@
     padding-bottom: 130px;
     justify-items: center;
 }
-.book input{
+.book button{
     border: 1px solid white;
     border-radius: 50px;
     width: 230px;
@@ -306,7 +306,7 @@
     margin: auto;
     padding-top: 0;
 }   
-.book input:hover{
+.book button:hover{
     background: white;
     color: #000;
 }

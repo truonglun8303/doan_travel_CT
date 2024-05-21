@@ -7,8 +7,32 @@ import { PiDotsNineBold } from "react-icons/pi";
 import { IoClose } from "react-icons/io5";
 import { LuPhone } from "react-icons/lu";
 import {Link} from 'react-router-dom'
+import axios from "axios";
+import {useNavigate} from 'react-router-dom'
 
 const Navbar = () => {
+  // POST DATA USER
+  const [firstname, setFirstname] = useState("");
+  const [lastname, setLastname] = useState("");
+  const [phone, SetPhone] = useState("");
+  const [email, setEmail] = useState("");
+  const [destination, setDestination] = useState("");
+  const navigate = useNavigate();
+  const upload = () =>{
+    const formData = new FormData()
+    formData.append("firstname",firstname);
+    formData.append('lastname',lastname);
+    formData.append("phone",phone);
+    formData.append("email",email);
+    formData.append("destination",destination);
+
+    // event.preventDefault();
+    axios.post('http://localhost:8081/createuser',formData) /*{title,file,description,price,startdate,enddate}*/
+    .then(res => {
+        navigate('/admin/');
+    })
+    .catch(err => console.log(err));
+  }
   //  START NAVBAR
     const [active, setActive] = useState('navBar');
     const showNav = () =>{
@@ -111,48 +135,42 @@ const Navbar = () => {
                     We always aim to reply within 24 hours.
                 </p>
             {/* <!-- Start Form Login --> */}
-              <form className="input-info" action="">
+              <div className="input-info" action="">
                 <ul className="name">
                   <li className="form-filed">
-                    <input className="form-input" type="text" placeholder=" "/>
+                    <input id='Firstname' name='Firstname' className="form-input" type="text" placeholder=" " onChange={e => setFirstname(e.target.value)}/>
                     <label htmlFor="name" className="form-label">First name (required)</label>
                   </li>
                   <li className="form-filed">
-                    <input className="form-input" type="text" placeholder=" "/>
+                    <input id='Lastname' name='Lastname' className="form-input" type="text" placeholder=" " onChange={e => setLastname(e.target.value)} />
                     <label htmlFor="name" className="form-label">Last name (required)</label>
                   </li>
                 </ul>
                 <ul className="email-phone">
                   <li className="form-filed">
-                    <input className="form-input" type="text" placeholder=" "/>
-                    <label htmlFor="name" className="form-label">E-mail (required)</label>
+                    <input id='Phone' name='Phone' className="form-input" type="text" placeholder=" " onChange={e => SetPhone(e.target.value)} />
+                    <label htmlFor="name" className="form-label">Telephone (required)</label>
                   </li>
 
                   <li className="form-filed">
-                    <input className="form-input" type="text" placeholder=" "/>
-                    <label htmlFor="name" className="form-label">Telephone (required)</label>
+                    <input id='Email' name='Email' className="form-input" type="text" placeholder=" " onChange={e => setEmail(e.target.value)} />
+                    <label htmlFor="name" className="form-label">Email (required)</label>
                   </li>
                 </ul>
                 
                 <div className="number-of-traveller">
                     <div className="form-filed">
-                        <input className="form-input" type="text" placeholder=" "/>
-                        <label htmlFor="name" className="form-label">Number of travellers (required)</label>
+                        <input id='Destination' name='Destination' className="form-input" type="text" placeholder=" " onChange={e => setDestination(e.target.value)}/>
+                        <label htmlFor="name" className="form-label">Destination (required)</label>
                     </div>
                 </div>
 
-                <div className="Destination">
-                    <div className="form-filed">
-                        <input className="form-input" type="text" placeholder=" "/>
-                        <label htmlFor="name" className="form-label">Destination</label>
-                    </div>
-                </div>
                 <div className="Interests">
                     <div className="book">
-                        <input type="submit" value="Book tickets"/>
+                        <button type='submit' onClick={upload} >Buy Ticket</button>
                     </div>
                 </div>
-              </form>
+              </div>
             {/* <!-- End Form Login --> */}
               </div>
           </nav>
